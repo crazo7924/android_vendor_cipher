@@ -13,6 +13,10 @@
 # limitations under the License.
 
 $(call inherit-product, device/generic/common/gsi_arm64.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit cipher common
 $(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
 # Allow building generic target & ota tools
@@ -28,4 +32,6 @@ PRODUCT_NAME := cipher_cssi
 PRODUCT_BRAND := Cipher
 PRODUCT_MODEL := Cipher Single System Image
 PRODUCT_MANUFACTURER := Cipher
+PRODUCT_DEVICE := generic_arm64
 
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
