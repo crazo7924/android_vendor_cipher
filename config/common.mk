@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # Cipher Audio
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/cipher/prebuilt/media,$(TARGET_COPY_OUT_PRODUCT)/media)
