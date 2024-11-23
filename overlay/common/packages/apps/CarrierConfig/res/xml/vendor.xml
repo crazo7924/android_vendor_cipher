@@ -24,5 +24,8 @@
 
         <int name="nr_advanced_threshold_bandwidth_khz_int" value="0"/>
 
+        <!-- wfcSpnFormat is "%s WiFi Calling" -->
+        <int name="wfc_spn_format_idx_int" value="11"/>
+
     </carrier_config>
 </carrier_config_list>
