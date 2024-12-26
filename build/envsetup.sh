@@ -82,7 +82,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch cipher_$target-$variant
+            lunch cipher_$target-ap3a-$variant
         fi
     fi
     return $?
